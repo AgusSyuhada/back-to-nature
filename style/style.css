@@ -1,0 +1,64 @@
+.custom-bg {
+    background-color: #68983B;
+}
+
+.custom-nav .nav-link {
+    color: white !important;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-nav .nav-link:hover {
+    color: #3E8E41 !important;
+}
+
+.dropdown-menu-custom {
+    background-color: #68983B !important; /* Samakan warna dengan navbar */
+    width: 100%;
+    border: none;
+}
+
+.dropdown-menu-custom .dropdown-item {
+    color: white !important;
+}
+
+.dropdown-menu-custom .dropdown-item:hover {
+    color: #3E8E41 !important;
+    background-color: #68983B !important;
+}
+
+.custom-dropdown-icon {
+    margin-left: 8px;
+    font-size: 0.7em;
+}
+
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+@media (max-width: 767px) {
+    .custom-dropdown-icon {
+        display: inline-block;
+    }
+
+    .custom-dropdown .dropdown-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-dropdown-icon {
+        display: none !important;
+    }
+
+    .custom-dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
