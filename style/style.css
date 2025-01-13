@@ -1,5 +1,13 @@
+html {
+    scroll-padding: 70px;
+}
+
+body {
+    font-family: 'Inter';font-size: 22px;
+}
+
 .custom-bg {
-    background-color: #68983B;
+    background-color: #68983b;
 }
 
 .custom-text {
@@ -14,30 +22,13 @@
     border-radius: 150px;
 }
 
-.custom-nav .nav-link {
-    color: white !important;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
+.mask {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
 }
 
-.custom-nav .nav-link:hover {
-    color: #3E8E41 !important;
-}
-
-.dropdown-menu-custom {
-    background-color: #68983B !important; /* Samakan warna dengan navbar */
-    width: 100%;
-    border: none;
-}
-
-.dropdown-menu-custom .dropdown-item {
-    color: white !important;
-}
-
-.dropdown-menu-custom .dropdown-item:hover {
-    color: #3E8E41 !important;
-    background-color: #68983B !important;
+.bg-image:hover .mask {
+    background-color: rgba(104, 152, 59, 0.7);
 }
 
 .custom-dropdown-icon {
@@ -58,6 +49,20 @@
 .logo {
     width: auto;
     height: 150px;
+}
+
+.btn-custom {
+    color: white !important;
+    background-color: #68983b !important;
+    border-color: #68983b !important;
+    padding: 10px !important;
+}
+
+.btn-custom:hover {
+    color: white !important;
+    background-color: #598233 !important;
+    border-color: #598233 !important;
+    padding: 10px !important;
 }
 
 @media (max-width: 767px) {
@@ -81,6 +86,46 @@
     .mask-custom {
         padding: 20px; /* Tambahkan lebih banyak padding untuk kenyamanan */
     }
+
+    .custom-nav .nav-link {
+        color: white !important;
+        margin-right: 20px;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        padding: 8px;
+        border-radius: 8px !important;
+        align-items: center;
+    }
+    
+    .custom-nav .nav-link:hover {
+        color: #68983b !important;
+        border-radius: 8px !important;
+        width: 100%;
+        background-color: #D1E0C2 !important; /* Samakan warna dengan navbar */
+    }
+    
+    .dropdown-menu-custom {
+        background-color: #639038 !important; /* Samakan warna dengan navbar */
+        width: 100%;
+        border-radius: 8px !important;
+        margin: 8px 0px 8px 0px !important;
+        padding: 10px !important;
+    }
+    
+    .dropdown-menu-custom .dropdown-item {
+        color: white !important;
+        align-items: center;
+        display: flex;
+        height: 50px;
+    }
+    
+    .dropdown-menu-custom .dropdown-item:hover {
+        color: #68983b !important;
+        width: 100%;
+        border-radius: 8px !important;
+        background-color: #D1E0C2 !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -90,5 +135,46 @@
 
     .custom-dropdown:hover .dropdown-menu {
         display: block;
+    }
+
+    .custom-nav .nav-link {
+        color: white !important;
+        margin-right: 20px;
+        height: 70px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        border-radius: 0% !important;
+        align-items: center;
+    }
+    
+    .custom-nav .nav-link:hover {
+        color: #68983b !important;
+        border-radius: 0% !important;
+        width: 100%;
+        background-color: #D1E0C2 !important; /* Samakan warna dengan navbar */
+    }
+    
+    .dropdown-menu-custom {
+        background-color: #639038 !important; /* Samakan warna dengan navbar */
+        width: 100%;
+        border-radius: 0% !important;
+        padding: 0% !important;
+        margin: 0% !important;
+    }
+    
+    .dropdown-menu-custom .dropdown-item {
+        color: white !important;
+        border-radius: 0% !important;
+        align-items: center;
+        display: flex;
+        height: 50px;
+    }
+    
+    .dropdown-menu-custom .dropdown-item:hover {
+        color: #68983b !important;
+        width: 100%;
+        background-color: #D1E0C2 !important;
     }
 }

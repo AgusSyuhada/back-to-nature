@@ -8,15 +8,16 @@
     <link rel="icon" type="image/x-icon"
         href="https://raw.githubusercontent.com/AgusSyuhada/back-to-nature/refs/heads/main/assets/backtonature_logo.svg">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark py-3 custom-bg border-0">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top custom-bg border-0" style="padding: 0%;">
         <div class="container">
-            <a href="./" class="d-flex align-items-center me-md-auto text-decoration-none">
+            <a href="./" class="d-flex align-items-center me-md-auto text-decoration-none" style="height: 70px;">
                 <img src="https://raw.githubusercontent.com/AgusSyuhada/back-to-nature/refs/heads/main/assets/backtonature_text_logo.png"
                     alt="backtonature_logo" width="auto" height="40">
             </a>
@@ -26,7 +27,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse fw-semibold pt-3 pt-md-0" id="navbarNav">
+            <div class="collapse navbar-collapse fw-semibold py-2 py-md-0" id="navbarNav">
                 <ul class="navbar-nav ms-auto nav-pills custom-nav">
                     <li class="nav-item"><a href="./" class="nav-link">Beranda</a></li>
                     <li class="nav-item"><a href="./#layanan-kami" class="nav-link">Layanan Kami</a></li>
@@ -36,14 +37,14 @@
                             Pengelompokan Herbal
                             <i class="fas fa-chevron-down custom-dropdown-icon ms-auto"></i>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-custom border-0 rounded-0 p-0 pt-0 p-md-3 pt-md-4">
+                        <ul class="dropdown-menu dropdown-menu-custom border-0">
                             <li><a class="dropdown-item text-white" href="./flower.html">Bunga</a></li>
                             <li><a class="dropdown-item text-white" href="./spice.html">Rempah</a></li>
                             <li><a class="dropdown-item text-white" href="./leaf.html">Daun</a></li>
                             <li><a class="dropdown-item text-white" href="./fruit.html">Buah</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="./#testimoni" class="nav-link">Testimoni</a></li>
+                    <li class="nav-item"><a href="#testimoni" class="nav-link">Testimoni</a></li>
                     <li class="nav-item"><a href="./contact" class="nav-link">Kontak</a></li>
                 </ul>
             </div>
@@ -66,10 +67,153 @@
             </div>
         </div>
         <!-- Hero -->
+
+        <!-- Section: Kontak  -->
+        <section id="layanan-kami">
+            <div class="container text-center py-4">
+                <div class="mb-4">
+                    <h2 class="mt-3 px-2 px-md-0 fw-bold">Hubungi Kami</h2>
+                    <div class="mt-2 line m-auto"></div>
+                    <p class="mt-2 px-2 px-md-0">Anda butuh bantuan? Silahkan hubungi kami dengan beberapa cara berikut</p>
+                </div>
+
+                <!-- Grid row -->
+                <div class="row d-flex align-items-stretch">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4 text-reset">
+                        <a class="text-reset" href="https://www.instagram.com/backtonature.pi19" target="_blank" title="Instagram">
+                            <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.25 7.5H60.75C72.75 7.5 82.5 17.25 82.5 29.25V60.75C82.5 66.5185 80.2085 72.0507 76.1296 76.1296C72.0507 80.2085 66.5185 82.5 60.75 82.5H29.25C17.25 82.5 7.5 72.75 7.5 60.75V29.25C7.5 23.4815 9.79151 17.9493 13.8704 13.8704C17.9493 9.79151 23.4815 7.5 29.25 7.5ZM28.5 15C24.9196 15 21.4858 16.4223 18.9541 18.9541C16.4223 21.4858 15 24.9196 15 28.5V61.5C15 68.9625 21.0375 75 28.5 75H61.5C65.0804 75 68.5142 73.5777 71.0459 71.0459C73.5777 68.5142 75 65.0804 75 61.5V28.5C75 21.0375 68.9625 15 61.5 15H28.5ZM64.6875 20.625C65.9307 20.625 67.123 21.1189 68.0021 21.9979C68.8811 22.877 69.375 24.0693 69.375 25.3125C69.375 26.5557 68.8811 27.748 68.0021 28.6271C67.123 29.5061 65.9307 30 64.6875 30C63.4443 30 62.252 29.5061 61.3729 28.6271C60.4939 27.748 60 26.5557 60 25.3125C60 24.0693 60.4939 22.877 61.3729 21.9979C62.252 21.1189 63.4443 20.625 64.6875 20.625ZM45 26.25C49.9728 26.25 54.7419 28.2254 58.2583 31.7417C61.7746 35.2581 63.75 40.0272 63.75 45C63.75 49.9728 61.7746 54.7419 58.2583 58.2583C54.7419 61.7746 49.9728 63.75 45 63.75C40.0272 63.75 35.2581 61.7746 31.7417 58.2583C28.2254 54.7419 26.25 49.9728 26.25 45C26.25 40.0272 28.2254 35.2581 31.7417 31.7417C35.2581 28.2254 40.0272 26.25 45 26.25ZM45 33.75C42.0163 33.75 39.1548 34.9353 37.045 37.045C34.9353 39.1548 33.75 42.0163 33.75 45C33.75 47.9837 34.9353 50.8452 37.045 52.955C39.1548 55.0647 42.0163 56.25 45 56.25C47.9837 56.25 50.8452 55.0647 52.955 52.955C55.0647 50.8452 56.25 47.9837 56.25 45C56.25 42.0163 55.0647 39.1548 52.955 37.045C50.8452 34.9353 47.9837 33.75 45 33.75Z" fill="#68983B"/>
+                                </svg>
+                                
+                        </a>
+                        <h3 class="fw-bold my-3">Instagram</h3>
+                        <p> @backtonature.pi19
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4 text-reset">
+                        <a class="text-reset" href="https://wa.me/621363178082" target="_blank" title="whatsapp">
+                            <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M71.4375 18.4125C67.999 14.9404 63.9038 12.1874 59.3907 10.3139C54.8775 8.44036 50.0366 7.48383 45.15 7.50002C24.675 7.50002 7.9875 24.1875 7.9875 44.6625C7.9875 51.225 9.7125 57.6 12.9375 63.225L7.6875 82.5L27.375 77.325C32.8125 80.2875 38.925 81.8625 45.15 81.8625C65.625 81.8625 82.3125 65.175 82.3125 44.7C82.3125 34.7625 78.45 25.425 71.4375 18.4125ZM45.15 75.5625C39.6 75.5625 34.1625 74.0625 29.4 71.25L28.275 70.575L16.575 73.65L19.6875 62.25L18.9375 61.0875C15.8533 56.164 14.216 50.4723 14.2125 44.6625C14.2125 27.6375 28.0875 13.7625 45.1125 13.7625C53.3625 13.7625 61.125 16.9875 66.9375 22.8375C69.8161 25.702 72.0972 29.1096 73.6486 32.8625C75.2 36.6154 75.9907 40.6391 75.975 44.7C76.05 61.725 62.175 75.5625 45.15 75.5625ZM62.1 52.4625C61.1625 52.0125 56.5875 49.7625 55.7625 49.425C54.9 49.125 54.3 48.975 53.6625 49.875C53.025 50.8125 51.2625 52.9125 50.7375 53.5125C50.2125 54.15 49.65 54.225 48.7125 53.7375C47.775 53.2875 44.775 52.275 41.25 49.125C38.475 46.65 36.6375 43.6125 36.075 42.675C35.55 41.7375 36 41.25 36.4875 40.7625C36.9 40.35 37.425 39.675 37.875 39.15C38.325 38.625 38.5125 38.2125 38.8125 37.6125C39.1125 36.975 38.9625 36.45 38.7375 36C38.5125 35.55 36.6375 30.975 35.8875 29.1C35.1375 27.3 34.35 27.525 33.7875 27.4875H31.9875C31.35 27.4875 30.375 27.7125 29.5125 28.65C28.6875 29.5875 26.2875 31.8375 26.2875 36.4125C26.2875 40.9875 29.625 45.4125 30.075 46.0125C30.525 46.65 36.6375 56.025 45.9375 60.0375C48.15 61.0125 49.875 61.575 51.225 61.9875C53.4375 62.7 55.4625 62.5875 57.075 62.3625C58.875 62.1 62.5875 60.1125 63.3375 57.9375C64.125 55.7625 64.125 53.925 63.8625 53.5125C63.6 53.1 63.0375 52.9125 62.1 52.4625Z" fill="#68983B"/>
+                                </svg>                                
+                        </a>
+                        <h3 class="fw-bold my-3">WhatsApp</h3>
+                        <p> (62) 813-6317-8082
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto text-reset">
+                        <a class="text-reset" href="mailto:backtonatureikespn@gmail.com" target="_blank" title="Email">
+                            <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 22.5C7.5 20.5109 8.29018 18.6032 9.6967 17.1967C11.1032 15.7902 13.0109 15 15 15H75C76.9891 15 78.8968 15.7902 80.3033 17.1967C81.7098 18.6032 82.5 20.5109 82.5 22.5V67.5C82.5 69.4891 81.7098 71.3968 80.3033 72.8033C78.8968 74.2098 76.9891 75 75 75H15C13.0109 75 11.1032 74.2098 9.6967 72.8033C8.29018 71.3968 7.5 69.4891 7.5 67.5V22.5ZM20.6963 22.5L45 43.7662L69.3038 22.5H20.6963ZM75 27.4837L47.4713 51.5738C46.7874 52.1729 45.9092 52.5032 45 52.5032C44.0908 52.5032 43.2126 52.1729 42.5287 51.5738L15 27.4837V67.5H75V27.4837Z" fill="#68983B"/>
+                                </svg>                                
+                        </a>
+                        <h3 class="fw-bold my-3">Email</h3>
+                        <p> backtonatureikespn@gmail.com
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Kontak  -->
+    
+        <!-- Footer -->
+        <footer class="text-center text-lg-start custom-bg text-white">
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start p-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                            <a href="./"
+                                class="d-flex justify-content-center align-items-center h-100 me-md-auto text-decoration-none">
+                                <img src="https://raw.githubusercontent.com/AgusSyuhada/back-to-nature/refs/heads/main/assets/backtonature_text_logo.png"
+                                    alt="backtonature_logo" width="auto" height="80">
+                            </a>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                            <!-- Links -->
+                            <h5 class="fw-bold mb-4">
+                                Kontak
+                            </h5>
+                            <p> (62) 813-6317-8082<br>
+                                backtonatureikespn@gmail.com
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4 text-reset">
+                            <!-- Links -->
+                            <h5 class="fw-bold mb-4">Follow Us</h5>
+                            <a href="https://www.instagram.com/backtonature.pi19" target="_blank" title="Instagram"
+                                class="text-reset text-decoration-none fs-3 me-2">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/621363178082" target="_blank" title="whatsapp" class="text-reset fs-3">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4 px-5" style="background-color: rgba(0, 0, 0, 0.05);">
+                <div class="container justify-content-between align-items-center">
+                    <div class="row">
+                        <div class="col-md-6 text-md-start text-center">
+                            &copy;<span id="tahun"></span> Copyright
+                        </div>
+                        <div class="col-md-6 text-md-end text-center mt-2 mt-md-0">
+                            Make With ❤ by Back To Nature️️
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script>
+        const countEl = document.getElementById("count");
+        countvisits();
+
+        function countvisits() {
+            fetch('https://counterpro.vercel.app/api/count/id/backtonature')
+                .then((res) => res.json())
+                .then((res) => {
+                    countEl.innerHTML = res.count;
+                })
+                .catch((error) => {
+                    console.error('Error fetching count:', error);
+                    countEl.innerHTML = "Error";
+                });
+        }
+    </script>
+
+    <script>
+        document.getElementById("tahun").textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
