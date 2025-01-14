@@ -6,6 +6,64 @@ body {
     font-family: 'Inter';font-size: 22px;
 }
 
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.image-container {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.responsive-img {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card {
+    position: relative;
+    z-index: 1;
+    color: black;
+    background: #d1e0c2;
+    padding: 20px;
+    width: 100%;
+    margin-top: -30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h5 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.anggota-nama p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.lihat-selengkapnya {
+    color: #68983b;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.lihat-selengkapnya:hover {
+    color: #3f5d24;
+}
+
 .custom-bg {
     background-color: #68983b;
 }
